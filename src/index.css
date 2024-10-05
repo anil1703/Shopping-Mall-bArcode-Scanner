@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scanner-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.camera-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.webcam {
+  width: 100%;
+  height: 100%;
+}
+
+/* Red line overlay */
+.scanner-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  animation: moveLine 2s infinite ease-in-out;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+/* Animation for moving the red line up and down */
+@keyframes moveLine {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 2px); /* Move the line down */
+  }
+  100% {
+    top: 0; /* Move the line back up */
+  }
+}
