@@ -5,7 +5,7 @@ import Barcode from 'react-barcode'; // Import Barcode from react-barcode
 function App() {
   // Example product data
   const product = {
-    id: '9492033481',
+    id: '939258925471789492',
     title: 'Shirt',
     cost: 2000
   };
